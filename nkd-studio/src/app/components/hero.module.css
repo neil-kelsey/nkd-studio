@@ -13,6 +13,7 @@
 }
 
 .nkd {
+  min-height: calc(182px - 2* var(--padding-xxl));
   padding: var(--padding-xxl);
   border: 5px solid var(--nkd-naples-yellow);
   font-weight: 500;
