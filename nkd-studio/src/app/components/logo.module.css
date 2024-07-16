@@ -1,0 +1,20 @@
+.nkd {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-family: var(--font-open-sans);
+  font-weight: 600;
+  letter-spacing: 0.1cap;
+  padding: var(--padding-small) 4px var(--padding-small) 6px;
+  border: 3px solid var(--nkd-powder-blue);
+  text-align: center;
+  background: var(--nkd-off-white);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.06) inset, -5px -5px 5px rgba(255, 255, 255, 0.9) inset;
+}
+
+.studio {
+  margin:0 0 0 var(--padding-small);
+}
