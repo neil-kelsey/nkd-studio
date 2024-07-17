@@ -1,9 +1,12 @@
+.logo {
+  position: relative;
+}
+
 .nkd {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
   height: 35px;
   font-family: var(--font-open-sans);
   font-weight: 600;
@@ -15,6 +18,22 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.06) inset, -5px -5px 5px rgba(255, 255, 255, 0.9) inset;
 }
 
+.nkd:hover {
+  cursor: pointer;
+}
+
 .studio {
   margin:0 0 0 var(--padding-small);
+}
+
+.logoButton {
+  position: absolute;
+  z-index: 100;
+  width: 300px;
+  height: 71px;
+  /* background: #ff5500; */
+}
+
+.logoButton:hover {
+  cursor: pointer;
 }

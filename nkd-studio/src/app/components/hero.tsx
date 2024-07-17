@@ -73,7 +73,7 @@ export default function Hero() {
               .pauseFor(2000)
               .deleteAll()
               .pauseFor(500)
-              .typeString("Navigating Kaleidoscope Dream")
+              .typeString("Navigating Kaleidoscope Dreams")
               .pauseFor(2000)
               .deleteAll()
               .pauseFor(500)

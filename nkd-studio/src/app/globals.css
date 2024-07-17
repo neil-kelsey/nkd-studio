@@ -29,6 +29,10 @@
   margin:0 auto;
 }
 
+.invisible {
+  display:none;
+}
+
 /* End of universal styles */
 
 /* Start of tag styles */
@@ -90,10 +94,3 @@ ul {
 }
 
 /* End of menu styles */
-
-
-
-
-
-
-
