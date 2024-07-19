@@ -1,15 +1,16 @@
 import Logo from './logo';
+import styles from "./header.module.css";
 
 export default function Header() {
   return (
     <header>
       <div className="container">
         <Logo />
-        <ul className="main-menu">
-          <li><a>Services</a></li>
-          <li><a>Work</a></li>
-          <li><a>About</a></li>
-          <li><a>Contact</a></li>
+        <ul className={styles.mainMenu}>
+          <li><a href="#services" className="border-box">Services</a></li>
+          <li><a href="#work" className="border-box">Work</a></li>
+          <li><a href="#about" className="border-box">About</a></li>
+          <li><a href="#contact" className="border-box">Contact</a></li>
         </ul>
       </div>
     </header>

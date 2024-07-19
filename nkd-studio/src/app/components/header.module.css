@@ -1,0 +1,19 @@
+/* Start of menu styles */
+
+.mainMenu {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mainMenu li {
+  margin: 0 0 0 var(--xxl-space);
+}
+
+.mainMenu li a {
+  padding: var(--md-space)
+}
+
+
+/* End of menu styles */

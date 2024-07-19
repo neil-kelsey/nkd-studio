@@ -1,11 +1,14 @@
 .hero {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 85vh;
+  height: 68vh;
   font-size: 60px;
   text-align: center;
+  background: var(--nkd-off-white);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.06) inset, -30px -30px 30px rgba(0, 0, 0, 0.01) inset;
 }
 
 .container {
@@ -13,8 +16,8 @@
 }
 
 .nkd {
-  min-height: calc(182px - 2* var(--padding-xxl));
-  padding: var(--padding-xxl);
+  min-height: calc(133px - 2* var(--xl-space));
+  padding: var(--xl-space);
   border: 5px solid var(--nkd-naples-yellow);
   font-weight: 500;
   text-align: center;
@@ -25,5 +28,5 @@
 .studio {
   text-align: left;
   font-weight: 300;
-  padding: 0 0 0 var(--padding-xl);
+  padding: 0 0 0 var(--xl-space);
 }

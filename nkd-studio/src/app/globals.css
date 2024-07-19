@@ -4,28 +4,25 @@
   /* Colours  */
   --nkd-white: #FFF;
   --nkd-white-transparent: rgba(255, 255, 255, 0.9);
-  --nkd-off-white: #F9F9F9;
-  --nkd-off-white-transparent: rgba(249, 249, 249, 0.9);
+  --nkd-off-white: #F3F3F3;
+  --nkd-off-white-transparent: rgba(243, 243, 243, 0.9);
   --nkd-dark-grey: #212529;
+  --nkd-link-hover: #003d7a;
   --nkd-powder-blue: #93B5C6;
   --nkd-tea-green: #DDEDAA;
   --nkd-naples-yellow: #F0CF65;
   --nkd-burnt-sienna: #D7816A;
   --nkd-funchsia-rose: #BD4F6C;
-  --lg-space: 50px;
-  --md-space: 10px;
   --sm-space: 5px;
-
-  /* Sizes */
-  --padding-small: 5px;
-  --padding-medium: 10px;
-  --padding-large: 10px;
-  --padding-xl: 30px;
-  --padding-xxl: 50px;
+  --md-space: 10px;
+  --lg-space: 20px;
+  --xl-space: 30px;
+  --xxl-space: 40px;
+  --xxxl-space: 70px;
 }
 
 .container {
-  width: clamp(400px, calc(100vw - 2 * var(--padding-small)), 1200px);
+  width: clamp(400px, calc(100vw - 2 * var(--sm-space)), 1200px);
   margin:0 auto;
 }
 
@@ -33,7 +30,52 @@
   display:none;
 }
 
+.box {
+  font-weight: 600;
+  padding: var(--md-space);
+  border: 4px solid var(--nkd-dark-grey);
+}
+
+.border-powder-blue {
+  border: 4px solid var(--nkd-powder-blue);
+}
+
+.border-tea-green {
+  border: 4px solid var(--nkd-tea-green);
+}
+
+.border-naples-yellow {
+  border: 4px solid var(--nkd-naples-yellow);
+}
+
+.border-burnt-sienna {
+  border: 4px solid var(--nkd-burnt-sienna);
+}
+
+.border-funchsia-rose {
+  border: 4px solid var(--nkd-funchsia-rose);
+}
+
+.border-dark-grey {
+  border: 4px solid var(--nkd-dark-grey);
+}
+
 /* End of universal styles */
+
+/* Start of spacing styles */
+
+/* As this is a small project I'm just making them as I need them rather than having an entire set */
+
+
+.pl-lg {
+  padding-left: var(--lg-space);
+}
+
+.pr-lg {
+  padding-right: var(--lg-space);
+}
+
+/* End of spacing styles */
 
 /* Start of tag styles */
 
@@ -45,7 +87,10 @@ body {
   color:var(--nkd-dark-grey);
   max-width: 100vw;
   overflow-x: hidden;
-  background:var(--nkd-white);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -57,7 +102,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding-xl);
+  padding: var(--xl-space);
   background: var(--nkd-white-transparent);
 }
 
@@ -65,32 +110,89 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: clamp(400px, calc(100vw - 2 * var(--padding-small)), 1600px);
+  width: clamp(400px, calc(100vw - 2 * var(--sm-space)), 1600px);
   margin:0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--nkd-dark-grey);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--nkd-link-hover);
 }
 
 h1 {
   font-size: 80px;
   line-height: 100px;
+  margin:0 0 var(--lg-space) 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 100px;
+  margin:0 0 var(--lg-space) 0;
 }
 
 ul {
   margin:0;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--xxxl-space) 0 var(--xxxl-space) 0
+}
+
 /* End of tag styles */
 
-/* Start of menu styles */
+/* Align the anchor link div id elements to the bottom of their parent containers */
 
-.main-menu {
-  list-style: none;
-  display: flex;
-  font-size: 18px;
-  font-weight: 500;
+#services, #work, #about, #contact{
+  align-self: flex-end;
 }
 
-.main-menu li {
-  margin: 0 0 0 var(--padding-xxl);
+/* Start of border-box styles - used to animate a border on to links or highlighted areas */
+
+.border-box {
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: var(--nkd-white);
 }
 
-/* End of menu styles */
+.border-box::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #FF0000;
+  z-index: -1;
+  transition: padding 0.3s;
+  animation: animate-colors 6s linear infinite;
+}
+
+.border-box:hover::before {
+  padding: 3px;
+}
+
+@keyframes animate-colors {
+  0% {
+    background: var(--nkd-powder-blue);
+  }
+  33.33% {
+    background: var(--nkd-tea-green);
+  }
+  66.67% {
+    background: var(--nkd-naples-yellow);
+  }
+  100% {
+    background: var(--nkd-powder-blue);
+  }
+}
+
+/* End of border-box styles */

@@ -1,0 +1,21 @@
+.services {
+  height:90vh;
+  background: var(--nkd-off-white);
+}
+
+.servicesWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 var(--lg-space) 0
+}
+
+.serviceBox {
+  flex: 1;
+  padding: var(--lg-space);
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.serviceBox:first-child {
+  margin-right: var(--lg-space);
+}

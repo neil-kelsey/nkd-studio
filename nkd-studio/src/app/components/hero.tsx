@@ -114,7 +114,6 @@ export default function Hero() {
         />
       </span>
       <span className={styles.studio}>Studio</span>
-      
     </article>
   );
 }
