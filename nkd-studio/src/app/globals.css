@@ -79,6 +79,11 @@
 
 /* Start of tag styles */
 
+html {
+  scroll-behavior: smooth;
+  background:var(--nkd-off-white);
+}
+
 html,
 body {
   margin:0;
@@ -87,10 +92,6 @@ body {
   color:var(--nkd-dark-grey);
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 header {
@@ -145,7 +146,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--xxxl-space) 0 var(--xxxl-space) 0
+  padding: var(--xxxl-space) 0 var(--xxxl-space) 0;
 }
 
 /* End of tag styles */
