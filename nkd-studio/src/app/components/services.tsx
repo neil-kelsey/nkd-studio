@@ -10,6 +10,7 @@ export default function Services() {
             <div className={styles.serviceBox + " services border-box "}>
               <div className="row">
                 <div className="col-4">
+                  {/* TODO - replace these with <Image /> from Next */}
                   <img className="border-powder-blue" src="/project-consultancy.jpg" />
                 </div>
                 <div className="col-8">
@@ -22,6 +23,7 @@ export default function Services() {
             <div className={styles.serviceBox + " services border-box"}>
               <div className="row">
                 <div className="col-4">
+                  {/* TODO - replace these with <Image /> from Next */}
                   <img className="border-tea-green" src="/web-development.jpg" />
                 </div>
                 <div className="col-8">
@@ -34,6 +36,7 @@ export default function Services() {
             <div className={styles.serviceBox + " services border-box"}>
               <div className="row">
                 <div className="col-4">
+                  {/* TODO - replace these with <Image /> from Next */}
                   <img className="border-naples-yellow" src="/web-development.jpg" />
                 </div>
                 <div className="col-8">
@@ -46,6 +49,7 @@ export default function Services() {
             <div className={styles.serviceBox + " services border-box"}>
               <div className="row">
                 <div className="col-4">
+                  {/* TODO - replace these with <Image /> from Next */}
                   <img className="border-burnt-sienna" src="/web-development.jpg" />
                 </div>
                 <div className="col-8">
@@ -58,6 +62,7 @@ export default function Services() {
             <div className={styles.serviceBox + " services border-box"}>
               <div className="row">
                 <div className="col-4">
+                  {/* TODO - replace these with <Image /> from Next */}
                   <img className="border-funchsia-rose" src="/web-development.jpg" />
                 </div>
                 <div className="col-8">
@@ -70,6 +75,7 @@ export default function Services() {
             <div className={styles.serviceBox + " services border-box"}>
               <div className="row">
                 <div className="col-4">
+                  {/* TODO - replace these with <Image /> from Next */}
                   <img className="border-dark-grey" src="/web-development.jpg" />
                 </div>
                 <div className="col-8">
