@@ -1,20 +1,21 @@
 .services {
-  height:90vh;
+  width: 100%;
+  min-height: 90vh;
+  background: linear-gradient(45deg, var(--nkd-white), var(--nkd-plum));
 }
 
 .servicesWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 0 0 var(--lg-space) 0
+  margin: 0 0 var(--lg-space) 0;
 }
 
 .serviceBox {
-  flex: 1;
-  padding: var(--lg-space);
+  display: flex;
+  align-items: flex-start; 
   background-color: #f4f4f4;
-  text-align: center;
-}
-
-.serviceBox:first-child {
-  margin-right: var(--lg-space);
+  text-align: left; 
+  margin-bottom: var(--xxxl-space); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
 }

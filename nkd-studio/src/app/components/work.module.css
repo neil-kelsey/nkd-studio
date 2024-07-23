@@ -2,3 +2,9 @@
   height:90vh;
   background: var(--nkd-white);
 }
+
+.square {
+  aspect-ratio: 1 / 1;
+  padding: var(--lg-space);
+  margin: 0 0 var(--lg-space) 0;
+}

@@ -8,12 +8,19 @@
 }
 
 .mainMenu li {
-  margin: 0 0 0 var(--xxl-space);
+  margin: 0 20px 0 12px;
+}
+
+.mainMenu li:first-child {
+  list-style: none;
 }
 
 .mainMenu li a {
-  padding: var(--md-space)
+  padding: var(--md-space);
 }
+
+
+
 
 
 /* End of menu styles */

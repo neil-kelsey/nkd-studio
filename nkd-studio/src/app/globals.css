@@ -1,5 +1,3 @@
-/* Start of universal styles */
-
 :root {
   /* Colours  */
   --nkd-white: #FFF;
@@ -7,75 +5,25 @@
   --nkd-off-white: #F3F3F3;
   --nkd-off-white-transparent: rgba(243, 243, 243, 0.9);
   --nkd-dark-grey: #212529;
+  --nkd-light-grey: #555555;
   --nkd-link-hover: #003d7a;
   --nkd-powder-blue: #93B5C6;
+  --nkd-powder-blue-transparent: rgba(147, 181, 198, 0.4);
   --nkd-tea-green: #DDEDAA;
+  --nkd-tea-green-transparent: rgba(221, 237, 170, 0.8);
   --nkd-naples-yellow: #F0CF65;
+  --nkd-naples-yellow-transparent: rgba(240, 207, 101, 0.4);
   --nkd-burnt-sienna: #D7816A;
   --nkd-funchsia-rose: #BD4F6C;
+  --nkd-plum: rgba(201, 178, 183, 0.4);
   --sm-space: 5px;
   --md-space: 10px;
   --lg-space: 20px;
   --xl-space: 30px;
   --xxl-space: 40px;
-  --xxxl-space: 70px;
+  --xxxl-space: 60px;
+  --xxxxl-space: 90px;
 }
-
-.container {
-  width: clamp(400px, calc(100vw - 2 * var(--sm-space)), 1200px);
-  margin:0 auto;
-}
-
-.invisible {
-  display:none;
-}
-
-.box {
-  font-weight: 600;
-  padding: var(--md-space);
-  border: 4px solid var(--nkd-dark-grey);
-}
-
-.border-powder-blue {
-  border: 4px solid var(--nkd-powder-blue);
-}
-
-.border-tea-green {
-  border: 4px solid var(--nkd-tea-green);
-}
-
-.border-naples-yellow {
-  border: 4px solid var(--nkd-naples-yellow);
-}
-
-.border-burnt-sienna {
-  border: 4px solid var(--nkd-burnt-sienna);
-}
-
-.border-funchsia-rose {
-  border: 4px solid var(--nkd-funchsia-rose);
-}
-
-.border-dark-grey {
-  border: 4px solid var(--nkd-dark-grey);
-}
-
-/* End of universal styles */
-
-/* Start of spacing styles */
-
-/* As this is a small project I'm just making them as I need them rather than having an entire set */
-
-
-.pl-lg {
-  padding-left: var(--lg-space);
-}
-
-.pr-lg {
-  padding-right: var(--lg-space);
-}
-
-/* End of spacing styles */
 
 /* Start of tag styles */
 
@@ -134,22 +82,137 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: 400;
-  line-height: 100px;
-  margin:0 0 var(--lg-space) 0;
+  line-height: 40px;
+  margin:0 0 var(--xxxl-space) 0;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  margin:0 0 var(--md-space) 0;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--nkd-light-grey);
 }
 
 ul {
   margin:0;
+  padding:0 0 0 var(--lg-space);
+}
+
+li {
+  list-style: square;
+  margin:0 0 var(--md-space) 0;
 }
 
 article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--xxxl-space) 0 var(--xxxl-space) 0;
+  padding: var(--xxxxl-space) 0 var(--xxxxl-space) 0;
+}
+
+img {
+  width:100%;
 }
 
 /* End of tag styles */
+
+/* Start of universal styles */
+
+.container {
+  width: clamp(400px, calc(100vw - 2 * var(--sm-space)), 1200px);
+  margin:0 auto;
+}
+
+.invisible {
+  display:none;
+}
+
+.box {
+  font-weight: 600;
+  padding: var(--md-space);
+  border: 5px solid var(--nkd-dark-grey);
+}
+
+.border-powder-blue {
+  border: 5px solid var(--nkd-powder-blue);
+}
+
+.border-tea-green {
+  border: 5px solid var(--nkd-tea-green);
+}
+
+.border-naples-yellow {
+  border: 5px solid var(--nkd-naples-yellow);
+}
+
+.border-burnt-sienna {
+  border: 5px solid var(--nkd-burnt-sienna);
+}
+
+.border-funchsia-rose {
+  border: 5px solid var(--nkd-funchsia-rose);
+}
+
+.border-dark-grey {
+  border: 5px solid var(--nkd-dark-grey);
+}
+
+/* End of universal styles */
+
+/* Start of spacing styles */
+
+/* As this is a small project I'm just making them as I need them rather than having an entire set */
+
+.pl-lg {
+  padding-left: var(--lg-space);
+}
+
+.pr-lg {
+  padding-right: var(--lg-space);
+}
+
+/* End of spacing styles */
+
+/* Start of grid system - again this is a small project so instead of building and entire grid system or importing one I'm just creating what I need */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin:var(--lg-space);
+}
+
+/* Columns */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: calc(var(--xl-space) / 2); /* Half padding on both sides to create even spacing */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-8 {
+  width: 66.67%;
+}
+
+.col-8.col-gap-1 {
+  width: 58.33%;
+  margin-right:8.33%;
+}
+
+.col-8.col-gap-2 {
+  width: 50%;
+  margin-right:16.67%;
+}
+
+/* End of grid system */
 
 /* Align the anchor link div id elements to the bottom of their parent containers */
 
@@ -171,14 +234,19 @@ article {
   content: '';
   width: 100%;
   height: 100%;
-  background: #FF0000;
   z-index: -1;
-  transition: padding 0.3s;
+  transition: padding 0.3s, margin 0.3s;
   animation: animate-colors 6s linear infinite;
 }
 
 .border-box:hover::before {
-  padding: 3px;
+  /* margin:5px -5px -5px 5px; */
+  padding: 4px;
+}
+
+.services.border-box:hover::before {
+  margin: 10px;
+  padding: 2px;
 }
 
 @keyframes animate-colors {
