@@ -1,6 +1,7 @@
 'use client';
 
-import styles from "./hero.module.css";
+import React from 'react';
+import styles from "./Hero.module.css";
 import Typewriter from 'typewriter-effect';
 
 export default function Hero() {

@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./about.module.css";
 
 export default function About() {
@@ -12,10 +13,10 @@ export default function About() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt diam ut pretium posuere. Aliquam erat volutpat.</p>
               <p>Vivamus a purus sed est dapibus eleifend eu non diam. Aliquam eu turpis eu odio sollicitudin tempus. Phasellus vitae ante porttitor.</p>
               <ul>
-                <li>Lorum ipsum</li>
-                <li>Delor sit a met</li>
-                <li>Lorum ipsum</li>
-                <li>Delor sit a met</li>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+                <li>List item four</li>
               </ul>
             </div>
             <div className="col-4">

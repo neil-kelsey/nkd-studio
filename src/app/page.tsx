@@ -1,11 +1,11 @@
 import Header from "./components/Header/Header";
-import Hero from "./components/hero";
-import Intro from "./components/intro";
-import Services from "./components/services";
-import Work from "./components/work";
-import About from "./components/about";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import Hero from "./components/Hero/Hero";
+import Intro from "./components/Intro/Intro";
+import Services from "./components/Services/Services";
+import Work from "./components/Work/Work";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (

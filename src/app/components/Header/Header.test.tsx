@@ -1,16 +1,15 @@
 import { render, screen } from '@testing-library/react';
-import Header from './Header'; // Directly import the Header component
+import Header from './Header';
 import React from 'react';
 import '@testing-library/jest-dom';
 
 describe('Header Component', () => {
-    // it('should render the logo', () => {
-    //     render(<Header />); // Render the component directly
-    //     expect(screen.getByAltText('Logo')).toBeInTheDocument();
-    // });
-
+    it('should render the logo with "Studio" text', () => {
+        render(<Header />);
+        expect(screen.getByText('Studio')).toBeInTheDocument();
+    });
     it('should render all menu items', () => {
-        render(<Header />); // Render the component directly
+        render(<Header />);
         expect(screen.getByText('Services')).toBeInTheDocument();
         expect(screen.getByText('Work')).toBeInTheDocument();
         expect(screen.getByText('About')).toBeInTheDocument();
