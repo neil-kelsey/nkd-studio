@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import React from 'react';
 import styles from './logo.module.css';
 
 // Define an interface for the props
