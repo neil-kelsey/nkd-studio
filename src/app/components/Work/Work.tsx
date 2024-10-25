@@ -5,7 +5,7 @@ export default function Work() {
   return (
     <article className={styles.work}>
       <div className="container">
-        <h2>Latest <span className="box">Work</span> and projects</h2>
+        <h2>Latest <span className="box selected" data-content="Work"><span>Work</span></span> and projects</h2>
         <div className="row">
           <div className="col-4">
             <div className={styles.square + " border-powder-blue"}>

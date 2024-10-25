@@ -5,7 +5,7 @@ export default function About() {
   return (
     <article className={styles.about}>
       <div className="container">
-        <h2><span className="box">About</span> me and NKD Studio</h2>
+        <h2><span className="box selected" data-content="About"><span>About</span></span> me and NKD Studio</h2>
         <div className="border-box">
           <div className="row">
             <div className="col-8 col-gap-1">

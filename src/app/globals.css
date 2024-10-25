@@ -6,9 +6,12 @@
   --nkd-off-white-transparent: rgba(243, 243, 243, 0.9);
   --nkd-dark-grey: #212529;
   --nkd-light-grey: #555555;
+  --nkd-lighter-grey: #c7c7c7;
+  --nkd-lightest-grey: #cecece;
+  --nkd-lightest-grey-transparent: rgba(202, 202, 202, 0.5);
   --nkd-link-hover: #003d7a;
   --nkd-powder-blue: #93B5C6;
-  --nkd-powder-blue-transparent: rgba(147, 181, 198, 0.4);
+  --nkd-powder-blue-transparent: rgba(19, 20, 21, 0.4);
   --nkd-tea-green: #DDEDAA;
   --nkd-tea-green-transparent: rgba(221, 237, 170, 0.8);
   --nkd-naples-yellow: #F0CF65;
@@ -135,9 +138,54 @@ img {
 }
 
 .box {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  padding: var(--md-space);
+  border: 5px solid var(--nkd-lighter-grey);
+  margin: 0 0 10px 0;
+}
+
+.box span {
+  visibility: hidden;
+}
+
+.box::before {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  content: attr(data-content);
   font-weight: 600;
   padding: var(--md-space);
   border: 5px solid var(--nkd-dark-grey);
+  background-color: var(--nkd-white-transparent);
+  margin: 0 0 10px 0;
+  transition: border-color 0.3s ease, background-color 0.3s ease, top 0.3s ease, left 0.3s ease;
+}
+
+.box:hover::before {
+  border-color: var(--nkd-dark-grey);
+  background-color: rgba(255, 255, 255, 0.5);
+  top: -12px;
+  left: -12px;
+}
+
+.box.selected::before {
+  top: -12px;
+  left: -12px;
+}
+
+/* Reverse the animation when hovering on selected boxes */
+.box.selected::before {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.box.selected:hover::before {
+  top: -5px;
+  left: -5px;
+  background-color: var(--nkd-white-transparent);
+  border-color: var(--nkd-lighter-grey);
 }
 
 .border-powder-blue {

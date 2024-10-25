@@ -6,7 +6,8 @@ export default function Services() {
     <article className={styles.services}>
       <div className="container">
         <div className="pl-lg pr-lg">
-          <h2><span className="box">Services</span> and solutions</h2>
+          {/* TODO - Update the titles to be selected if the menu item is selected */}
+          <h2><span className="box selected" data-content="Services"><span>Services</span></span> and solutions</h2>
           <div className={styles.servicesWrapper}>
             <div className={styles.serviceBox + " services border-box "}>
               <div className="row">
