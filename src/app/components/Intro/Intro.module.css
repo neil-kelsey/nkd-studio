@@ -1,4 +1,7 @@
+
+
 .intro {
+  padding: 0 0 var(--xxxxl-space) 0;
   background: var(--nkd-white);
 }
 
@@ -6,4 +9,24 @@
   font-size: 25px;
   line-height: 35px;
   max-width: 1000px;
+}
+
+.intro h1 > span:nth-of-type(4) {
+  color: #fa00df;
+}
+
+.intro h1 > span:nth-of-type(7) {
+  color: #cc00e6;
+}
+
+.intro h1 > span:nth-of-type(10) {
+  color: #8c00f0;
+}
+
+.intro h1 > span:nth-of-type(12) {
+  color: #5b00f7;
+}
+
+.intro h1 > span:nth-of-type(15) {
+  color: #3000fe;
 }

@@ -1,0 +1,90 @@
+<svg id="Outer_arrow" data-name="Outer arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1087" height="1194" viewBox="0 0 1087 1194">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: #2b3c1a;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        filter: url(#filter-4);
+      }
+
+      .cls-5 {
+        filter: url(#filter-5);
+      }
+
+      .cls-6 {
+        filter: url(#filter-6);
+      }
+
+      .cls-7 {
+        filter: url(#filter-7);
+      }
+
+      .cls-8 {
+        filter: url(#filter-8);
+      }
+    </style>
+    <filter id="filter" x="35.469" y="74.031" width="798.969" height="813.875" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#279a2e"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="580" y="2" width="340" height="330" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#279a2e"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="60.375" y="99.938" width="774.063" height="752.968" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#108017"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="624.969" y="57.219" width="257" height="248.031" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#108017"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="283.594" y="306" width="799.376" height="813.94" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#107a17"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-6" x="198" y="861.938" width="340.188" height="330.062" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#107a17"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-7" x="283.594" y="341" width="774.466" height="753.03" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#09650f"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-8" x="236.062" y="888.719" width="257.126" height="248.061" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#09650f"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Shape_1_copy_4" data-name="Shape 1 copy 4" class="cls-1" d="M804.181,272.77c26.206-26.22-9-10.872,30.259-52.9-60-51.964-11.136-81.74-68.766-104.859C540.984,24.869,326.6,92.069,182.2,232.937,30.637,380.8-26.206,661.107,121.96,887.921c36.96-21.227,86.588-51.1,134.951-78.191C174.9,669.168,157.06,478.555,293.539,343.276c113.782-112.782,258.706-136.927,389.224-88.684C735.9,274.233,758.729,228.189,804.181,272.77Z"/>
+  <path id="Triangle_1_copy_4" data-name="Triangle 1 copy 4" class="cls-2" d="M777.667,1.991L919.994,317.425,579.988,332.014Z"/>
+  <path id="Shape_1_copy_4-2" data-name="Shape 1 copy 4" class="cls-3" d="M804.181,272.77c26.206-26.22-9-10.872,30.259-52.9-60-51.964-29.966-61.169-87.766-83.859C539.984,54.869,332.957,118.18,200.2,250.937,63.117,388.019,1.794,645.107,132.96,852.921c36.96-21.227,41.588-25.1,89.951-52.191C140.9,660.168,139.658,462.156,275.539,326.276c116.782-116.782,278.706-150.927,421.224-94.684C749.46,252.388,758.729,228.189,804.181,272.77Z"/>
+  <path id="Triangle_1_copy_4-2" data-name="Triangle 1 copy 4" class="cls-4" d="M774.092,57.21L881.963,294.673l-257,10.591Z"/>
+  <path id="Shape_1_copy_4-3" data-name="Shape 1 copy 4" class="cls-5" d="M313.88,921.2c-26.22,26.223,9,10.874-30.275,52.911,60.031,51.968,11.143,81.748,68.8,104.868,224.809,90.15,439.312,22.94,583.783-117.941,151.639-147.877,208.519-428.216,60.272-655.054-36.979,21.23-86.634,51.108-135.023,78.2,82.058,140.578,99.9,331.21-36.647,466.5C710.951,963.482,565.95,987.63,435.363,939.382,382.2,919.738,359.356,965.787,313.88,921.2Z"/>
+  <path id="Triangle_1_copy_4-3" data-name="Triangle 1 copy 4" class="cls-6" d="M340.409,1192.01l-142.4-315.468,340.186-14.591Z"/>
+  <path id="Shape_1_copy_4-4" data-name="Shape 1 copy 4" class="cls-7" d="M313.88,921.2c-26.22,26.223,9,10.874-30.275,52.911,60.031,51.968,29.982,61.178,87.813,83.868,206.8,81.15,413.937,17.83,546.764-114.943,137.158-137.1,198.508-394.212,67.275-602.048-36.979,21.229-41.61,25.105-90,52.2,82.058,140.578,83.3,338.61-52.655,474.505-116.844,116.794-278.854,150.94-421.447,94.694C368.63,941.585,359.356,965.787,313.88,921.2Z"/>
+  <path id="Triangle_1_copy_4-4" data-name="Triangle 1 copy 4" class="cls-8" d="M343.985,1136.78L236.057,899.3,493.2,888.7Z"/>
+</svg>

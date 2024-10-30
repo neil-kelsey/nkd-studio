@@ -7,7 +7,7 @@
   height: 64vh;
   font-size: 60px;
   text-align: center;
-  background: linear-gradient(45deg, var(--nkd-white), var(--nkd-powder-blue-transparent));
+  background: linear-gradient(45deg, #ff00de, #2a00ff); /* TODO - do I make this a var */
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.06) inset, -30px -30px 30px rgba(0, 0, 0, 0.01) inset;
 }
 
@@ -18,15 +18,17 @@
 .nkd {
   min-height: calc(133px - 2* var(--xl-space));
   padding: var(--xl-space);
-  border: 5px solid var(--nkd-naples-yellow);
-  font-weight: 500;
+  border: 10px solid #FFF;
+  font-weight: 400;
   text-align: center;
-  background: var(--nkd-off-white);
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.06) inset, -10px -10px 10px rgba(255, 255, 255, 0.9) inset;
+  background: #00000030; /* TODO - do I make this a var */
+  color: #FFF; /* TODO - do I make this a var */
+  /* box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.06) inset, -10px -10px 10px rgba(255, 255, 255, 0.9) inset; */
 }
 
 .studio {
   text-align: left;
-  font-weight: 300;
+  font-weight: 200;
   padding: 0 0 0 var(--xl-space);
+  color: #FFF; /* TODO - do I make this a var */
 }
