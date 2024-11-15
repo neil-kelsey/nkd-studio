@@ -1,7 +1,7 @@
 .services {
   width: 100%;
   min-height: 90vh;
-  background: linear-gradient(45deg, var(--nkd-white), var(--nkd-plum));
+  background: #FFF;
 }
 
 .servicesWrapper {

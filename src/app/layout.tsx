@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from "next";
-import { Roboto, Open_Sans } from "next/font/google";
+import { Roboto, Open_Sans, Archivo } from "next/font/google";
 import "./globals.css";
 
 const roboto_init = Roboto({
@@ -15,6 +15,13 @@ const open_sans_init = Open_Sans({
   variable: '--font-open-sans',
 });
 
+const archivo_init = Archivo({
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-archivo',
+});
+
 export const metadata: Metadata = {
   title: "NKD Studio",
   description: "Neil Kelsey Development Studio",
@@ -27,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto_init.variable} ${open_sans_init.variable}`}>{children}</body>
+      <body className={`${roboto_init.variable} ${open_sans_init.variable} ${archivo_init.variable}`}>{children}</body>
     </html>
   );
 }

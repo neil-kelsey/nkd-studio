@@ -23,7 +23,7 @@ export default function About() {
               </div>
               <div className="col-4">
                 {/* TODO - replace these with <Image /> from Next */}
-                <img className="border-funchsia-rose" src="/family.jpg" />
+                <img className="border-funchsia-rose width-100" src="/family.jpg" />
               </div>
             </div>
           </div>

@@ -44,7 +44,7 @@ function setTransition(event: any) {
   }, tiltEffectSettings.speed);
 }
 
-export function initializeTiltEffect() {
+export function useTiltEffect() {
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
 
