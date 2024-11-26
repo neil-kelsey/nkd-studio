@@ -4,8 +4,8 @@ import styles from "./header.module.css";
 
 export default function Header() {
   return (
-    <header>
-      <div className="container">
+    <header className={styles.header}>
+      <div className={styles.headerContainer}>
         <Logo />
         <ul className={styles.mainMenu}>
           <li><a href="#services" className="border-box">Services</a></li>

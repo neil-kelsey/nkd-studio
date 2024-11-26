@@ -1,4 +1,45 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px var(--lg-space);
+  background: var(--nkd-white-transparent);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(400px, calc(100vw - 2 * var(--sm-space)), 1400px);
+  margin:0 auto;
+}
+
+/* The following three classes are not used but should be usefull when I componentise this */
+/* They provide the three main varients of headers and will enable me to create a versatile header component */
+
+.headerContainer.fullWidth {
+  width: 100%;
+}
+
+.headerContainer.center {
+  width: auto;
+}
+
+.headerContainer.leftAligned {
+  width: auto;
+  margin: none;
+}
+
+
+
 /* Start of menu styles */
+
+
 
 .mainMenu {
   list-style: none;

@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 0 var(--lg-space) 0;
 }
 
 .serviceBox {
@@ -18,4 +17,21 @@
   text-align: left; 
   margin-bottom: var(--xxxl-space); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+.plant {
+  position: relative;
+  top:54px;
+}
+
+.womanContainer {
+  position: relative;
+  height: 227px;
+}
+
+.womanRunning {
+  position: absolute;
+  left: 20%;
+  transform: translate(-50%, -50%); /* Centering based on the anchor point */
+  transform-origin: center; /* Sets the anchor point to the center of the image */
 }
